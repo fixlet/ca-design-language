@@ -1,0 +1,59 @@
+{
+  "name": "ca-design-language",
+  "version": "1.0.0",
+  "description": "CA Design Language package",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": ">=1.9.1",
+    "tether": "^1.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "clean-css": "^3.4.23",
+    "eslint": "^3.12.2",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-build-control": "^0.7.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.1",
+    "grunt-html": "^8.1.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-saucelabs": "^9.0.0",
+    "grunt-stamp": "^0.3.0",
+    "htmlhint": "^0.9.13",
+    "is-travis": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass": "^4.1.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "shelljs": "^0.7.5",
+    "shx": "^0.2.1",
+    "time-grunt": "^1.4.0",
+    "uglify-js": "^2.7.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fixlet/ca-design-language.git"
+  },
+  "keywords": [
+    "CA"
+  ],
+  "author": "S. Krasotin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fixlet/ca-design-language/issues"
+  },
+  "homepage": "https://github.com/fixlet/ca-design-language#readme"
+}
