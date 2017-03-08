@@ -15,8 +15,8 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/scss',
-                    src: ['bootstrap.scss'],
-                    dest: 'src/css',
+                    src: ['bootstrap.scss', 'DEMO.scss'],
+                    dest: 'build/css',
                     ext: '.css'
                 }]
             }
@@ -29,16 +29,16 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'src/css/*.css'
+                src: 'build/css/*.css'
             }
         },
         cssmin: { // Begin CSS Minify Plugin
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'src/css',
+                    cwd: 'build/css',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'src/css',
+                    dest: 'build/css',
                     ext: '.min.css'
                 }]
             }
@@ -46,8 +46,8 @@ module.exports = function (grunt) {
 
         //CLEAN CONFIGURATION
         clean: {
-            devcss: 'app/css/*',
-            devjs: 'app/js/*',
+            devcss: 'build/css/*',
+            devjs: 'build/js/*',
         },
 
         concat: {
@@ -58,6 +58,7 @@ module.exports = function (grunt) {
                 }
             },
             bootstrap: {
+                //TODO rewrite
                 src: [
                     'app/src/js/bootstrap/*.js'
                 ],
@@ -67,6 +68,7 @@ module.exports = function (grunt) {
 
         //JS
         babel: {
+            //TODO rewrite
             dev: {
                 options: {
                     sourceMap: true
@@ -91,8 +93,8 @@ module.exports = function (grunt) {
             }
         },
 
-
         uglify: {
+            //TODO rewrite
             build: {
                 src: ['app/js/*.js'],
                 dest: 'app/js/script.min.js'
@@ -102,6 +104,7 @@ module.exports = function (grunt) {
 
         //WATCHERS
         watch: {
+            //TODO rewrite
             css: {
                 files: '**/*.scss',
                 tasks: ['sass', 'postcss', 'cssmin']
