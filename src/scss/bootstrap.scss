@@ -53,9 +53,12 @@
 @import "list-group";
 @import "responsive-embed";
 @import "close";
+@import "dlg/atoms/icons";
+@import "dlg/atoms/select2";
 
 //Molecules
-@import "dlg/molecules/tree";
+@import "dlg/molecules/select-toggle";
+@import "dlg/molecules/tree-list";
 
 //Organisms
 @import "dlg/organisms/maintenance";

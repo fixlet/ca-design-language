@@ -1,0 +1,24 @@
+.dlg {
+  .tree-folder {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/icons/folder/base.png);
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 4px;
+
+    &.tree-folder_open {
+      background-image: url(../img/icons/folder/open.png);
+    }
+
+    &.tree-folder_closed {
+      background-image: url(../img/icons/folder/close.png);
+    }
+  }
+
+  .country-icon {
+    height: 15px;
+    vertical-align: middle;
+  }
+}
