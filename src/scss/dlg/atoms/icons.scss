@@ -1,5 +1,5 @@
 .dlg {
-  .tree-folder {
+  ul .tree-folder {
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -8,7 +8,26 @@
     vertical-align: top;
     margin-left: 4px;
 
-    &.tree-folder_open {
+    &.tree-folder_opened {
+      background-image: url(../img/icons/folder/open.png);
+    }
+
+    &.tree-folder_closed {
+      background-image: url(../img/icons/folder/close.png);
+    }
+
+  }
+
+  .table .tree-folder {
+    vertical-align: top;
+    margin-left: 4px;
+    padding-left: 2.5em;
+    background: url(../img/icons/folder/base.png) no-repeat left top;
+    background-position-x: 0.75rem;
+    background-position-y: 6px;
+    font-weight: bold;
+
+    &.tree-folder_opened {
       background-image: url(../img/icons/folder/open.png);
     }
 
@@ -16,6 +35,8 @@
       background-image: url(../img/icons/folder/close.png);
     }
   }
+
+
 
   .country-icon {
     height: 15px;

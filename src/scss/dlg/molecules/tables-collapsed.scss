@@ -26,25 +26,6 @@
       }
     }
 
-    .tree-folder {
-      //padding: 0.75rem;
-      background: url("../img/icons/folder/base.svg") no-repeat left top;
-      background-position-x: 0.75rem;
-      background-position-y: 6px;
-      padding-left: 2.5rem;
-      font-weight: $font-weight-bold;
-    }
-
-    .tree-folder_opened {
-      @extend .tree-folder;
-      background-image: url("../img/icons/folder/open.svg");
-    }
-
-    .tree-folder_closed {
-      @extend .tree-folder;
-      background-image: url("../img/icons/folder/close.svg");
-    }
-
     .tree-2nd {
       padding-left: 38px;
     }

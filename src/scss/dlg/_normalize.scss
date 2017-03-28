@@ -1,6 +1,8 @@
 /*! based on normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 .dlg {
+  //background: yellow;
+  //font-size: 14px;
   font-family: sans-serif; // 1
   line-height: 1.15; // 2
   -ms-text-size-adjust: 100%; // 3
@@ -437,5 +439,10 @@
 
   [hidden] {
     display: none;
+  }
+
+  .control-label.required:after {
+    content:" *";
+    color:red;
   }
 }
