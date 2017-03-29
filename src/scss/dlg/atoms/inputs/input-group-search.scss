@@ -1,0 +1,15 @@
+.dlg {
+  .input-group-search {
+    @extend .input-group;
+
+    & input {
+      border-right: 0;
+    }
+
+    & .input-group-addon {
+      background-color: $white;
+      color: $blue-1;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.dlg {
+  .list-group-item {
+      background-color: $list-group-item-background;
+      padding: .25rem 1rem;
+      height: 3rem;
+
+    & .text {
+      color: $black-2;
+      line-height: 1rem;
+      padding-left: 10px;
+    }
+  }
+}

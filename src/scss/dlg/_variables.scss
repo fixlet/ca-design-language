@@ -266,7 +266,7 @@ $font-family-headers: "ca_sans", "Helvetica Neue", Arial, sans-serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 0.875rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
@@ -279,10 +279,10 @@ $line-height-base: 1.5 !default;
 
 $font-size-h1: 3.2rem !default;
 $font-size-h2: 2.4rem !default;
-$font-size-h3: 1.5rem !default;
-$font-size-h4: 1.2rem !default;
-$font-size-h5: 1.0rem !default;
-$font-size-h6: 0.75rem !default;
+$font-size-h3: 2rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.2rem !default;
+$font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   $font-family-headers !default;
@@ -413,6 +413,9 @@ $btn-link-disabled-color:        $gray-light !default;
 $btn-padding-x-sm:               0.75rem !default;
 $btn-padding-y-sm:               .25rem !default;
 
+$btn-padding-x-me:               1.5rem !default;
+$btn-padding-y-me:               .4rem !default;
+
 $btn-padding-x-lg:               1.5rem !default;
 $btn-padding-y-lg:               .75rem !default;
 
@@ -441,11 +444,11 @@ $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 $input-color:                    $gray !default;
-$input-border-color:             rgba($black,.15) !default;
+$input-border-color:             $grey-1 !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
-$input-border-radius:            $border-radius !default;
+$input-border-radius:            0 !default;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
@@ -828,7 +831,7 @@ $modal-backdrop-bg:           $black !default;
 $modal-backdrop-opacity:      .5 !default;
 $modal-header-border-color:   $gray-lighter !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
-$modal-header-border-width:   $modal-content-border-width !default;
+$modal-header-border-width:   0 !default;
 $modal-footer-border-width:   $modal-header-border-width !default;
 $modal-header-padding:        15px !default;
 
@@ -888,6 +891,7 @@ $list-group-border-radius:       $border-radius !default;
 
 $list-group-item-padding-x:      1.25rem !default;
 $list-group-item-padding-y:      .75rem !default;
+$list-group-item-background:     $grey-3;
 
 $list-group-hover-bg:            $gray-lightest !default;
 $list-group-active-color:        $component-active-color !default;
@@ -981,3 +985,9 @@ $pre-bg:                      $gray-lightest !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
+
+
+// select2
+
+$select2-border-radius:       0;
+$select2-line-height:         $line-height-base;
