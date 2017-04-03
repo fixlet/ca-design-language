@@ -55,10 +55,8 @@
 @import "responsive-embed";
 @import "close";
 @import "dlg/atoms/icons";
-@import "dlg/atoms/select2";
 @import "dlg/atoms/list-group";
 @import "dlg/atoms/card";
-@import "dlg/molecules/select2/core";
 //Molecules
 @import "dlg/molecules/select-toggle";
 @import "dlg/molecules/tree-list";
@@ -74,3 +72,6 @@
 
 // Utility classes
 @import "utilities";
+
+// 3rd party libraries
+@import "libs/select2/index";
