@@ -4,10 +4,6 @@
 // .modal-content   - actual modal w/ bg and corners and stuff
 
 .dlg {
-  // Kill the scroll on the body
-  .modal-open {
-    overflow: hidden;
-  }
 
   // Container that the modal scrolls within
   .modal {
@@ -35,10 +31,7 @@
       transform: translate(0, 0);
     }
   }
-  .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+
 
   // Shell div to position the modal with bottom padding
   .modal-dialog {
@@ -153,4 +146,15 @@
       max-width: $modal-lg;
     }
   }
+}
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
