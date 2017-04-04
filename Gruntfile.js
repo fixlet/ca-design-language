@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/scss',
-                    src: ['dlg.scss', 'DEMO.scss'],
+                    src: ['index.scss', 'DEMO.scss'],
                     dest: 'build/css',
                     ext: '.css'
                 }]
@@ -46,8 +46,9 @@ module.exports = function (grunt) {
 
         //CLEAN CONFIGURATION
         clean: {
-            devcss: 'build/css/*',
-            devjs: 'build/js/*',
+            all: 'build/**',
+            devcss: 'build/css/**',
+            devjs: 'build/js/**',
         },
 
         concat: {
@@ -64,6 +65,15 @@ module.exports = function (grunt) {
                 ],
                 dest: 'app/src/js/bootstrap.js'
             }
+        },
+
+        copy: {
+            assets: {
+                files: [
+                    {expand: true, cwd: 'src/', src: ['fonts/**'], dest: 'build/'},
+                    {expand: true, cwd: 'src/', src: ['img/**'], dest: 'build/'}
+                ],
+            },
         },
 
         //JS
@@ -101,7 +111,6 @@ module.exports = function (grunt) {
             }
         },
 
-
         //WATCHERS
         watch: {
             //TODO rewrite
@@ -116,24 +125,23 @@ module.exports = function (grunt) {
         }
     });
 
+
+
     require('load-grunt-tasks')(grunt, { // These plugins provide necessary tasks.
         scope: 'devDependencies',
         pattern: ['grunt-*'] // Exclude Sass compilers. We choose the one to load later on.
-        //pattern: ['grunt-*', '!grunt-sass', '!grunt-contrib-sass'] // Exclude Sass compilers. We choose the one to load later on.
     });
     require('time-grunt')(grunt);
-
-    // Supported Compilers: sass (Ruby) and libsass.
-    /*(function (sassCompilerName) {
-        require('./grunt/bs-sass-compile/' + sassCompilerName + '.js')(grunt);
-    })(process.env.TWBS_SASS || 'libsass');*/
 
     // Register Grunt tasks
     grunt.registerTask('default', ['watch']);
 
     //clean
-    grunt.registerTask('clean-dev-css', ['clean:devcss']);
-    grunt.registerTask('clean-dev-js', ['clean:devjs']);
+    grunt.registerTask('clean-all', ['clean:all']);
+    grunt.registerTask('clean-css', ['clean:devcss']);
+    grunt.registerTask('clean-js', ['clean:devjs']);
+
+    grunt.registerTask('copy-assets', ['copy:assets']);
 
     //styles
     grunt.registerTask('dev-css', ['sass', 'postcss', 'cssmin']);
