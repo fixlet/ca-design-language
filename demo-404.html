@@ -22,16 +22,29 @@
 
     <div class="demo_body">
         <div class="container">
-            <h1 class="demo-title">404 page</h1>
+            <h1 class="demo-title">404 and 500 pages</h1>
             <div class="element">
-                <div class="error-page">
-                    <h1>Page not found :(</h1>
-                    <p>Error code: 404</p>
-                    <button type="button" class="btn btn_primary btn_lg">Take me home</button>
-                    <img src="low-res.jpg" srcset="high-res.jpg 2x">
+                <div class="error-page error-page_404">
+                    <div class="error-page__content">
+                        <h1>Page not found :(</h1>
+                        <p class="error-page__code">Error code: 404</p>
+                        <button type="button" class="btn btn_primary btn_lg">Take me home</button>
+                    </div>
                 </div>
+            </div>
 
-
+            <div class="element">
+                <div class="error-page error-page_500">
+                    <div class="error-page__content">
+                        <h1>Something went wrong :(</h1>
+                        <p class="error-page__code">Error code: 500</p>
+                        <p class="error-page__description">
+                            CA App Synthetic monitor is temporarily unavailable, but we’re working har to fix the
+                            poblem. Try to refresh page in a few minutes.
+                        </p>
+                        <button type="button" class="btn btn_primary btn_lg">Refresh</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,24 @@
+.error-page {
+  background-size: 491px 450px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 500px;
+  display: flex;
+  align-items: center;
+
+  .error-page__description {
+    max-width: 440px;
+  }
+
+  .error-page__code {
+    color: $gray-light;
+  }
+}
+
+.error-page_404 {
+  background-image: url(../img/error_pages/404@2x.png);
+}
+
+.error-page_500 {
+  background-image: url(../img/error_pages/500@2x.png);
+}
