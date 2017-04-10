@@ -1,0 +1,52 @@
+.loader {
+  &.loader-sm {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &.loader-md {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  &.loader-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .circular {
+    animation: rotate 2s linear infinite;
+    transform-origin: center center;
+
+    .path {
+      stroke: black;
+      stroke-width: 4px;
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
