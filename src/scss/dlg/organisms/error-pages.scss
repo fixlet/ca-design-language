@@ -13,12 +13,14 @@
   .error-page__code {
     color: $gray-light;
   }
-}
 
-.error-page_404 {
-  background-image: url(../img/error_pages/404@2x.png);
-}
-
-.error-page_500 {
-  background-image: url(../img/error_pages/500@2x.png);
+  &.error-page_403 {
+    background-image: url(../img/error_pages/403@2x.png);
+  }
+  &.error-page_404 {
+    background-image: url(../img/error_pages/404@2x.png);
+  }
+  &.error-page_500 {
+    background-image: url(../img/error_pages/500@2x.png);
+  }
 }
