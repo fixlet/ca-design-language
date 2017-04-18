@@ -91,6 +91,13 @@
     }
   }
 
+  // Table with middle aligned cells
+  .table_middle-aligned {
+    tbody tr td {
+      vertical-align: middle;
+    }
+  }
+
   // Table backgrounds
   //
   // Exact selectors below required to override `.table-striped` and prevent
