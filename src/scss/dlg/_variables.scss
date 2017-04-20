@@ -110,23 +110,23 @@ $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$black-1: #051A2B !default;
-$black-2: #143044 !default;
+$brand-black-1: #051A2B !default;
+$brand-black-2: #143044 !default;
 
-$blue-1: #0092C8 !default;
-$blue-2: #F5FDFF !default;
+$brand-blue-1: #0092C8 !default;
+$brand-blue-2: #F5FDFF !default;
 
-$grey-1: #EBEBEB !default;
-$grey-2: #F0F0F0 !default;
-$grey-3: #F5F5F5 !default;
-$grey-4: #D8D8D8 !default;
+$brand-grey-1: #EBEBEB !default;
+$brand-grey-2: #F0F0F0 !default;
+$brand-grey-3: #F5F5F5 !default;
+$brand-grey-4: #D8D8D8 !default;
 
-$green-1: #48A23F !default;
-$green-2: #DAF9D7 !default;
+$brand-green-1: #48A23F !default;
+$brand-green-2: #DAF9D7 !default;
 
 // Reassign color vars to semantic color scheme
 $brand-primary:             $blue !default;
-$brand-success:             $green-1 !default;
+$brand-success: $brand-green-1 !default;
 $brand-info:                $teal !default;
 $brand-warning:             #FF8C1B !default;
 $brand-danger:              #DB4332 !default;
@@ -199,7 +199,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $black-1 !default;
+$body-color:    $brand-black-1 !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
 
@@ -362,9 +362,9 @@ $table-bg:                      transparent !default;
 $table-inverse-bg:              $gray-dark !default;
 $table-inverse-color:           $body-bg !default;
 
-$table-bg-accent:               $grey-3 !default; //rgba($black,.05) !default;
-$table-bg-hover:                $grey-2 !default; //$blue-2 !default; //rgba($black,.075) !default;
-$table-bg-active:               $blue-2 !default;
+$table-bg-accent:               $brand-grey-3 !default; //rgba($black,.05) !default;
+$table-bg-hover:                $brand-grey-2 !default; //$blue-2 !default; //rgba($black,.075) !default;
+$table-bg-active:               $brand-blue-2 !default;
 
 $table-head-bg:                 $gray-lighter !default;
 $table-head-color:              $gray !default;
@@ -386,11 +386,11 @@ $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-primary-color:              $white !default;
-$btn-primary-bg:                 $blue-1 !default;
+$btn-primary-bg:                 $brand-blue-1 !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $black-2 !default;
-$btn-secondary-bg:               $grey-1 !default;
+$btn-secondary-color:            $brand-black-2 !default;
+$btn-secondary-bg:               $brand-grey-1 !default;
 $btn-secondary-border:           $btn-secondary-bg !default;
 
 $btn-info-color:                 $white !default;
@@ -423,9 +423,9 @@ $btn-padding-y-lg:               .75rem !default;
 $btn-block-spacing-y:            .5rem !default;
 $btn-toolbar-margin:             .5rem !default;
 
-$btn-icon-color:                 rgba($black-1,0.5) !default;
-$btn-icon-hover-color:           $black-1 !default;
-$btn-icon-disabled-color:        rgba($black-1,0.25) !default;
+$btn-icon-color:                 rgba($brand-black-1,0.5) !default;
+$btn-icon-hover-color:           $brand-black-1 !default;
+$btn-icon-disabled-color:        rgba($brand-black-1,0.25) !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:              $border-radius !default;
@@ -445,7 +445,7 @@ $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 $input-color:                    $gray !default;
-$input-border-color:             $grey-1 !default;
+$input-border-color:             $brand-grey-1 !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
@@ -458,7 +458,7 @@ $input-border-focus:             lighten($brand-primary, 25%) !default;
 $input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, .6) !default;
 $input-color-focus:              $input-color !default;
 
-$input-color-placeholder:        $gray-light !default;
+$input-color-placeholder:        rgba($brand-black-1, 0.5) !default;
 
 $input-padding-x-sm:             .5rem !default;
 $input-padding-y-sm:             .25rem !default;
@@ -589,7 +589,7 @@ $dropdown-min-width:             10rem !default;
 $dropdown-padding-y:             .5rem !default;
 $dropdown-margin-top:            .125rem !default;
 $dropdown-bg:                    $white !default;
-$dropdown-border-color:          rgba($black,.15) !default;
+$dropdown-border-color:          $brand-grey-1 !default;
 $dropdown-border-width:          $border-width !default;
 $dropdown-divider-bg:            $gray-lighter !default;
 $dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175) !default;
@@ -794,7 +794,7 @@ $popover-arrow-outer-color:           fade-in($popover-border-color, .05) !defau
 $badge_default-bg:            $gray-light !default;
 $badge_primary-bg:            $brand-primary !default;
 $badge_success-bg:            $brand-success !default;
-$badge_green-light-bg:        $green-2 !default;
+$badge_green-light-bg:        $brand-green-2 !default;
 $badge_info-bg:               $brand-info !default;
 $badge_warning-bg:            $brand-warning !default;
 $badge_danger-bg:             $brand-danger !default;
@@ -892,7 +892,7 @@ $list-group-border-radius:       $border-radius !default;
 
 $list-group-item-padding-x:      1.25rem !default;
 $list-group-item-padding-y:      .75rem !default;
-$list-group-item-background:     $grey-3;
+$list-group-item-background:     $brand-grey-3;
 
 $list-group-hover-bg:            $gray-lightest !default;
 $list-group-active-color:        $component-active-color !default;

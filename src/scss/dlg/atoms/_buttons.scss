@@ -77,28 +77,28 @@
   }
 
   .btn_switch {
-    color: $blue-1;
+    color: $brand-blue-1;
     border-radius: 0;
 
     &:active,
     &.active,
     &:disabled {
-      color: $black-1;
-      background-color: $grey-4;
+      color: $brand-black-1;
+      background-color: $brand-grey-4;
       @include box-shadow(none);
     }
     &,
     &:focus,
     &:active {
       background-color: $white;
-      border-color: $grey-4;
+      border-color: $brand-grey-4;
     }
     @include hover {
       border-color: transparent;
     }
     @include hover-focus {
-      color: $black-1;
-      background-color: $grey-4;
+      color: $brand-black-1;
+      background-color: $brand-grey-4;
     }
   }
 
@@ -148,10 +148,11 @@
 
     &,
     &:active,
+    &:focus,
     &.active,
     &:disabled {
       background-color: transparent;
-      @include box-shadow(none);
+      box-shadow: none;
     }
     &,
     &:focus,
@@ -212,7 +213,7 @@
 
   .btn_edit {
     @include hover {
-      color: $blue-1;
+      color: $brand-blue-1;
     }
   }
 
