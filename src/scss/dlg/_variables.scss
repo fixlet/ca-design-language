@@ -296,10 +296,15 @@ $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 
-$display1-weight:     300 !default;
-$display2-weight:     300 !default;
+$display1-weight:     100 !default;
+$display2-weight:     200 !default;
 $display3-weight:     300 !default;
-$display4-weight:     300 !default;
+$display4-weight:     400 !default;
+$display5-weight:     500 !default;
+$display6-weight:     600 !default;
+$display7-weight:     700 !default;
+$display8-weight:     800 !default;
+$display9-weight:     900 !default;
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size:   1.25rem !default;
@@ -653,11 +658,14 @@ $navbar-light-toggler-border:       rgba($black,.1) !default;
 
 // Navs
 
+$nav-margin-bottom:             40px !default;
 $nav-item-margin:               .2rem !default;
 $nav-item-inline-spacer:        1rem !default;
-$nav-link-padding:              .5em 1em !default;
+$nav-link-padding:              0 0 .6em 0 !default;
+$nav-link-margin:               0 2em 0 0 !default;
 $nav-link-hover-bg:             $gray-lighter !default;
 $nav-disabled-link-color:       $gray-light !default;
+$nav-tabs-active-border-width:  3px !default;
 
 $nav-tabs-border-color:                       #ddd !default;
 $nav-tabs-border-width:                       $border-width !default;
@@ -824,7 +832,8 @@ $modal-title-line-height:     $line-height-base !default;
 
 $modal-content-bg:               $white !default;
 $modal-content-border-color:     rgba($black,.2) !default;
-$modal-content-border-width:     $border-width !default;
+$modal-content-border-width:     0 !default;
+$modal-content-padding:          30px 40px !default;
 $modal-content-xs-box-shadow:    0 3px 9px rgba($black,.5) !default;
 $modal-content-sm-up-box-shadow: 0 5px 15px rgba($black,.5) !default;
 

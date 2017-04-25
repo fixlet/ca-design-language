@@ -6,13 +6,14 @@
   .nav {
     display: flex;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: $nav-margin-bottom;
     list-style: none;
   }
 
   .nav-link {
     display: block;
     padding: $nav-link-padding;
+    margin: $nav-link-margin;
 
     @include hover-focus {
       text-decoration: none;
@@ -39,11 +40,12 @@
     .nav-link {
       border: $nav-tabs-border-width solid transparent;
       text-transform: uppercase;
-      font-weight: $font-weight-bold;
+      font-weight: $display4-weight;
+      color: $brand-blue-1;
       @include border-top-radius($nav-tabs-border-radius);
 
       @include hover-focus {
-        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        border-bottom: $nav-tabs-active-border-width solid $brand-blue-1;
       }
 
       &.disabled {
@@ -57,7 +59,7 @@
     .nav-item.show .nav-link {
       color: $nav-tabs-active-link-hover-color;
       background-color: $nav-tabs-active-link-hover-bg;
-      border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-bg;
+      border-bottom: $nav-tabs-active-border-width solid $brand-blue-1;
     }
 
     .dropdown-menu {

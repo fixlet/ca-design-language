@@ -44,6 +44,7 @@
   .modal-content {
     position: relative;
     display: flex;
+    padding: $modal-content-padding;
     flex-direction: column;
     background-color: $modal-content-bg;
     background-clip: padding-box;
