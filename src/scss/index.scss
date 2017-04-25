@@ -33,12 +33,10 @@
 @import "dlg/atoms/forms";
 @import "dlg/atoms/checkboxes";
 @import "dlg/atoms/buttons";
-@import "dlg/atoms/inputs/input-group-search";
 
 // Components
 @import "transitions";
 @import "dlg/atoms/dropdown";
-@import "dlg/molecules/button-group";
 @import "input-group";
 @import "dlg/atoms/custom-forms";
 @import "nav";
@@ -57,9 +55,13 @@
 @import "dlg/atoms/icons";
 @import "dlg/atoms/list-group";
 @import "dlg/atoms/card";
-//Molecules
+
+// Molecules
+@import "dlg/molecules/button-group";
 @import "dlg/molecules/select-toggle";
 @import "dlg/molecules/tree-list";
+@import "dlg/molecules/input-group-search";
+
 
 //Organisms
 @import "dlg/organisms/maintenance";
