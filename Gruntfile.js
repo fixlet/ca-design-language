@@ -19,6 +19,22 @@ module.exports = function (grunt) {
                     dest: 'build/css',
                     ext: '.css'
                 }]
+            },
+            dev: {
+                options: {
+                    sourceMap: true,
+                    sourceMapEmbed: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/scss',
+                    src: ['index.scss'],
+                    dest: '../asm/assets/ca-design/css/',
+                    rename: function (dest, src) {
+                        return dest + src.replace('index', 'ca-design.min');
+                    },
+                    ext: '.css'
+                }]
             }
         },
         postcss: { // Begin Post CSS Plugin
@@ -113,18 +129,16 @@ module.exports = function (grunt) {
 
         //WATCHERS
         watch: {
-            //TODO rewrite
             css: {
-                files: '**/*.scss',
-                tasks: ['sass', 'postcss', 'cssmin']
+                files: 'src/scss/dlg/**/*.scss',
+                tasks: ['asm-css']
             },
-            js: {
-                files: '**/*.js',
-                tasks: ['uglify']
-            }
+            // js: {
+            //     files: '**/*.js',
+            //     tasks: ['uglify']
+            // }
         }
     });
-
 
 
     require('load-grunt-tasks')(grunt, { // These plugins provide necessary tasks.
@@ -144,7 +158,8 @@ module.exports = function (grunt) {
     grunt.registerTask('copy-assets', ['copy:assets']);
 
     //styles
-    grunt.registerTask('dev-css', ['sass', 'postcss', 'cssmin']);
+    grunt.registerTask('dev-css', ['sass:dist', 'postcss', 'cssmin']);
+    grunt.registerTask('asm-css', ['sass:dev']);
 
     //js
     grunt.registerTask('dev-concat-bootstrap', ['concat:bootstrap']);
