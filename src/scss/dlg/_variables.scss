@@ -113,7 +113,7 @@ $gray-lightest:             #f7f7f9 !default;
 $brand-black-1: #051A2B !default;
 $brand-black-2: #143044 !default;
 
-$brand-blue-1: #0092C8 !default;
+$brand-blue-1: #00AEEF !default;
 $brand-blue-2: #F5FDFF !default;
 
 $brand-grey-1: #EBEBEB !default;
@@ -287,7 +287,7 @@ $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   $font-family-headers !default;
-$headings-font-weight:   700 !default;
+$headings-font-weight:   300 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
@@ -379,7 +379,7 @@ $btn-padding-x:                  1.5rem !default;
 $btn-padding-y:                  .64rem !default;
 $btn-line-height:                1.25 !default;
 $btn-font-family:                $font-family-headers !default;
-$btn-font-weight:                $font-weight-bold !default;
+$btn-font-weight:                $font-weight-normal !default;
 $btn-letter-spacing: 0.02rem !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
 $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
@@ -428,9 +428,9 @@ $btn-icon-hover-color:           $brand-black-1 !default;
 $btn-icon-disabled-color:        rgba($brand-black-1,0.25) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              $border-radius !default;
-$btn-border-radius-lg:           $border-radius-lg !default;
-$btn-border-radius-sm:           $border-radius-sm !default;
+$btn-border-radius:              0 !default;
+$btn-border-radius-lg:           0 !default;
+$btn-border-radius-sm:           0 !default;
 
 $btn-transition:                 all .2s ease-in-out !default;
 
