@@ -61,7 +61,7 @@
   }
 
   .btn_secondary {
-    @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+    @include button-variant($brand-blue-1, $white, $btn-secondary-border);
   }
   .btn_info {
     @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);

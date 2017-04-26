@@ -113,10 +113,10 @@ $gray-lightest:             #f7f7f9 !default;
 $brand-black-1: #051A2B !default;
 $brand-black-2: #143044 !default;
 
-$brand-blue-1: #0092C8 !default;
+$brand-blue-1: #00AEEF !default;
 $brand-blue-2: #F5FDFF !default;
 
-$brand-grey-1: #EBEBEB !default;
+$brand-grey-1: #D4D4D4 !default;
 $brand-grey-2: #F0F0F0 !default;
 $brand-grey-3: #F5F5F5 !default;
 $brand-grey-4: #D8D8D8 !default;
@@ -287,7 +287,7 @@ $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   $font-family-headers !default;
-$headings-font-weight:   700 !default;
+$headings-font-weight:   300 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
@@ -296,10 +296,15 @@ $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 
-$display1-weight:     300 !default;
-$display2-weight:     300 !default;
+$display1-weight:     100 !default;
+$display2-weight:     200 !default;
 $display3-weight:     300 !default;
-$display4-weight:     300 !default;
+$display4-weight:     400 !default;
+$display5-weight:     500 !default;
+$display6-weight:     600 !default;
+$display7-weight:     700 !default;
+$display8-weight:     800 !default;
+$display9-weight:     900 !default;
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size:   1.25rem !default;
@@ -379,7 +384,7 @@ $btn-padding-x:                  1.5rem !default;
 $btn-padding-y:                  .64rem !default;
 $btn-line-height:                1.25 !default;
 $btn-font-family:                $font-family-headers !default;
-$btn-font-weight:                $font-weight-bold !default;
+$btn-font-weight:                $font-weight-normal !default;
 $btn-letter-spacing: 0.02rem !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
 $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
@@ -428,9 +433,9 @@ $btn-icon-hover-color:           $brand-black-1 !default;
 $btn-icon-disabled-color:        rgba($brand-black-1,0.25) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              $border-radius !default;
-$btn-border-radius-lg:           $border-radius-lg !default;
-$btn-border-radius-sm:           $border-radius-sm !default;
+$btn-border-radius:              0 !default;
+$btn-border-radius-lg:           0 !default;
+$btn-border-radius-sm:           0 !default;
 
 $btn-transition:                 all .2s ease-in-out !default;
 
@@ -653,11 +658,14 @@ $navbar-light-toggler-border:       rgba($black,.1) !default;
 
 // Navs
 
+$nav-margin-bottom:             40px !default;
 $nav-item-margin:               .2rem !default;
 $nav-item-inline-spacer:        1rem !default;
-$nav-link-padding:              .5em 1em !default;
+$nav-link-padding:              1em 0 .6em 0 !default;
+$nav-link-margin:               0 2em 0 0 !default;
 $nav-link-hover-bg:             $gray-lighter !default;
 $nav-disabled-link-color:       $gray-light !default;
+$nav-tabs-active-border-width:  3px !default;
 
 $nav-tabs-border-color:                       #ddd !default;
 $nav-tabs-border-width:                       $border-width !default;
@@ -824,7 +832,8 @@ $modal-title-line-height:     $line-height-base !default;
 
 $modal-content-bg:               $white !default;
 $modal-content-border-color:     rgba($black,.2) !default;
-$modal-content-border-width:     $border-width !default;
+$modal-content-border-width:     0 !default;
+$modal-content-padding:          30px 40px !default;
 $modal-content-xs-box-shadow:    0 3px 9px rgba($black,.5) !default;
 $modal-content-sm-up-box-shadow: 0 5px 15px rgba($black,.5) !default;
 
@@ -992,3 +1001,7 @@ $pre-scrollable-max-height:   340px !default;
 
 $select2-border-radius:       0;
 $select2-line-height:         $line-height-base;
+
+
+// CA Hacks
+$form-right-margin-fix: 5px !default;
