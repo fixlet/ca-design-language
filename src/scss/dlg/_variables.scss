@@ -116,7 +116,7 @@ $brand-black-2: #143044 !default;
 $brand-blue-1: #00AEEF !default;
 $brand-blue-2: #F5FDFF !default;
 
-$brand-grey-1: #EBEBEB !default;
+$brand-grey-1: #D4D4D4 !default;
 $brand-grey-2: #F0F0F0 !default;
 $brand-grey-3: #F5F5F5 !default;
 $brand-grey-4: #D8D8D8 !default;
@@ -661,7 +661,7 @@ $navbar-light-toggler-border:       rgba($black,.1) !default;
 $nav-margin-bottom:             40px !default;
 $nav-item-margin:               .2rem !default;
 $nav-item-inline-spacer:        1rem !default;
-$nav-link-padding:              0 0 .6em 0 !default;
+$nav-link-padding:              1em 0 .6em 0 !default;
 $nav-link-margin:               0 2em 0 0 !default;
 $nav-link-hover-bg:             $gray-lighter !default;
 $nav-disabled-link-color:       $gray-light !default;
@@ -1001,3 +1001,7 @@ $pre-scrollable-max-height:   340px !default;
 
 $select2-border-radius:       0;
 $select2-line-height:         $line-height-base;
+
+
+// CA Hacks
+$form-right-margin-fix: 5px !default;

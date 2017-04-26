@@ -396,4 +396,11 @@
       }
     }
   }
+
+  // Styling forms hacks
+  .form-check-margin-fix,
+  .form-select-margin-fix,
+  .form-radio-margin-fix {
+    margin-left: $form-right-margin-fix;
+  }
 }
