@@ -340,6 +340,7 @@
         display: inline-block;
         width: auto; // Prevent labels from stacking above inputs in `.form-group`
         vertical-align: middle;
+        margin-top: -1px;
       }
 
       // Make static controls behave like regular ones
