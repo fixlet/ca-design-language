@@ -109,6 +109,7 @@ $gray:                      #464a4c !default;
 $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
+$background: #F8FAFD !default;
 
 $brand-black-1: #051A2B !default;
 $brand-black-2: #143044 !default;
@@ -198,7 +199,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $white !default;
+$body-bg:       #F8FAFD !default;
 $body-color:    $brand-black-1 !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
@@ -208,7 +209,7 @@ $inverse-color: $gray-lighter !default;
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary !default;
+$link-color:            $brand-blue-1 !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: none !default; //underline !default;
