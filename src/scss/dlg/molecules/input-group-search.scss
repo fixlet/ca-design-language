@@ -2,6 +2,10 @@
   .input-group-search {
     @extend .input-group;
 
+    label {
+      width: 100%;
+    }
+
     .form-control {
       display: inline;
       width: 100%;
@@ -11,6 +15,7 @@
     .input-group-addon {
       display: inline;
       position: absolute;
+      height: calc(100% - 0.5rem - 2px);
       top: 1px;
       right: 0.25rem;
       z-index: 3;
