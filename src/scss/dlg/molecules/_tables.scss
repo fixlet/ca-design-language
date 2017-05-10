@@ -165,7 +165,7 @@
     thead tr {
       cursor: default;
     }
-    tr {
+    tr[data-level="0"] {
       cursor: pointer;
     }
   }
