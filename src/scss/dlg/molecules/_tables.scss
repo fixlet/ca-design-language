@@ -169,4 +169,8 @@
       cursor: pointer;
     }
   }
+
+  .browse-maintenance .alert[data-empty="empty"]{
+    margin-top: 50px;
+  }
 }
