@@ -165,8 +165,12 @@
     thead tr {
       cursor: default;
     }
-    tr {
+    tr[data-level="0"] {
       cursor: pointer;
     }
+  }
+
+  .browse-maintenance .alert[data-empty="empty"]{
+    margin-top: 50px;
   }
 }
