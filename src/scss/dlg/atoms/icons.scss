@@ -27,6 +27,10 @@
     background-position-y: 6px;
     background-repeat: no-repeat;
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 520px;
 
     &.tree-folder_opened {
       background-image: url(../img/icons/folder/open.png);
