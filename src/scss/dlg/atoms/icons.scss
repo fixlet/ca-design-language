@@ -5,7 +5,7 @@
     display: inline-block;
     background-image: url(../img/icons/folder/base.png);
     cursor: pointer;
-    vertical-align: top;
+    vertical-align: text-bottom;
     margin-left: 4px;
 
     &.tree-folder_opened {
@@ -40,12 +40,9 @@
       background-image: url(../img/icons/folder/close.png);
     }
   }
+}
 
-
-
-  .country-icon {
-    width: 30px;
-    max-height: 25px;
-    vertical-align: middle;
-  }
+.country-icon {
+  height: 20px;
+  vertical-align: middle;
 }
