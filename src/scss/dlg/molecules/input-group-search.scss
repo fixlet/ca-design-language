@@ -23,6 +23,10 @@
       background-color: $white;
       color: $brand-blue-1;
       cursor: pointer;
+
+      .fa-search {
+        vertical-align: bottom;
+      }
     }
   }
 
